@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Message Form</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <%- include('navbar', {links: links}) %>
+
+        <h4>Message Form</h4>
+        <form method="POST" action="/new">
+            <input type="text" name="authorName" placeholder="Author Name">
+            <input type="text" name="messageText" placeholder="Message">
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
+
+ 
