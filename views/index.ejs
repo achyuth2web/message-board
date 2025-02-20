@@ -7,9 +7,10 @@
         <%- include('navbar', {links: links}) %>
 
         <h4><%= title %></h4>
-
-        <% messages.forEach((msg) => { %>
-            <%- include('message', {message: msg}); %>
-        <% }); %>
+        <% if (locals.messages.length > 0) {%>
+            <% messages.forEach((msg) => { %>
+                <%- include('message', {message: msg}); %>
+            <% }); %>
+        <% } %>
     </body>
 </html>
